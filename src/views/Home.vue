@@ -3,7 +3,7 @@
 import { ref, computed, onMounted, watch } from 'vue'
 import { useRouter } from 'vue-router'
 import { useAuth } from '@/composables/useAuth'
-import { getPokemon } from '@/services/pokeApi'
+import { getPokemon } from '@/services/pokeApi.js'
 
 const router = useRouter()
 const { user, logout } = useAuth()
