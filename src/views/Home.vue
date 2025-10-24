@@ -92,6 +92,8 @@ async function salir() {
     >
       <div style="text-align:center;">
         <img v-if="foto" :src="foto" :alt="pokemon.name" style="max-width:100%;height:auto;" />
+        <p v-else>Sin imagen disponible</p>
+        <span>foto</span>
         <h2 style="text-transform:capitalize;margin:.5rem 0 0;">{{ pokemon.name }}</h2>
         <p style="margin:0;">ID: {{ pokemon.id }} | Altura: {{ pokemon.height }} | Peso: {{ pokemon.weight }}</p>
         <p style="margin:0;">Tipos: <strong>{{ (pokemon.types ?? []).map(t=>t.type.name).join(', ') }}</strong></p>
