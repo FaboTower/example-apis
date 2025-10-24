@@ -37,7 +37,12 @@ function debounceBuscar() {
   }, 500)
 }
 
-onMounted(() => buscar())
+onMounted(() => {
+    buscar()
+
+})
+
+
 
 watch(query, debounceBuscar)
 
